@@ -37,7 +37,7 @@ function cheak(){
             location.href = "../add/add.html";
         }
         else if(cheakpoint == 1){
-            location.href = "..delete/delete.html";
+            location.href = "../delete/delete.html";
         }
         else if(cheakpoint == 2){
             location.href = "../main/main.html";
