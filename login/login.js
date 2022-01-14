@@ -34,13 +34,13 @@ function cheak(){
     },3000);
     setTimeout(function(){
         if(cheakpoint == 0){
-            location.href = "D:/Documents/Desktop/Final2/add/add.html";
+            location.href = "../add/add.html";
         }
         else if(cheakpoint == 1){
-            location.href = "D:/Documents/Desktop/Final2/delete/delete.html";
+            location.href = "..delete/delete.html";
         }
         else if(cheakpoint == 2){
-            location.href = "D:/Documents/Desktop/Final2/main/main.html";
+            location.href = "../main/main.html";
         }
         else if(cheakpoint == 3){
             history.go(0)
@@ -48,6 +48,7 @@ function cheak(){
     },4000);
 
 }
+
 function newuser(){
     var inputname = document.getElementById("username2").value;
     var inputpassword = document.getElementById("password2").value;
@@ -69,17 +70,17 @@ function newuser(){
                 history.go(0);
             }
         }
-    },3000);
+    },2000);
     setTimeout(function(){
         ref.doc(inputname).set({
             cheak:2,
             user:inputname,
             password:inputpassword
         });
-    },4000);
+    },2500);
     setTimeout(function(){
         history.go(0);
-    },4000);
+    },5000);
 }
 
 
